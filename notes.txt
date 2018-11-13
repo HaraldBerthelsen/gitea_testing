@@ -1,0 +1,15 @@
+setup: directories etc, script to create and to remove
+
+import from existing git repo (github, local)
+import from checked out svn repo
+import from folder
+
+backup
+
+https
+
+login? ssh?
+
+describe standard workflow
+
+
