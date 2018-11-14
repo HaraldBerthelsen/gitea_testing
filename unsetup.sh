@@ -1,1 +1,1 @@
-sudo deluser --remove-home git
+deluser --remove-home git
