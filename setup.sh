@@ -34,7 +34,6 @@ END
 
 #create organisation abair-web, add users to it
 #create html repository as abair-web
-#if other users can write directly to this repo, add the repo to them (..)
 #Need to add every user to team, and also every repo to team. Makes sense. Can this be done by api?
 #yes:
 #PUT /teams/{id}/members/{username} Add a team member
@@ -42,7 +41,17 @@ END
 
 #http PUT http://localhost:3000/api/v1/teams/contributors/members/test_contributor2
 #No, fails, says team does not exist..
+#Oh it needs team id number
+#But this fails as well:
+#http --auth harald PUT http://localhost:3000/api/v1/teams/8/members/kalleanka
+#http: password for harald@localhost:3000: 
+#HTTP/1.1 404 Not Found
+
 #So is the swagger doc wrong?
+
+#webui add repo to team:
+#/org/<ORG>/teams/<TEAM>/repositories
+
 
 #import svn new_html into html repository:
 #
