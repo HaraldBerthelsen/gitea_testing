@@ -6,16 +6,14 @@ import sys, os
 #1 List "organisations"
 #2 For each organisation, list repositories
 #3 for each repository, clone if it's not here, or pull if it is
-user = "harald"
-pw = "bajen!"
 
 
-base_url = "www.abair.tcd.ie/gitea"
-api_url = "https://%s/api/v1" % base_url
-clone_url = "https://%s:%s@%s" % (user,pw,base_url)
+
+base_url = "https://www.abair.tcd.ie/gitea"
+api_url = "%s/api/v1" % base_url
 
 def call(url):    
-    response = requests.get(url, auth=(user,pw))
+    response = requests.get(url)
 
     if response.status_code != 200:
         print(response.status_code)
@@ -46,7 +44,7 @@ def pull(directory):
 def clone(directory):
     cwd = os.getcwd()
     os.chdir(os.path.dirname(directory))
-    cmd = "git clone '%s/%s.git'" % (clone_url, directory)
+    cmd = "git clone '%s/%s.git'" % (base_url, directory)
     print(cmd)
     os.system(cmd)
     os.chdir(cwd)
