@@ -12,8 +12,16 @@ import sys, os
 base_url = "https://www.abair.tcd.ie/gitea"
 api_url = "%s/api/v1" % base_url
 
+tokenfile = ".token"
+if os.path.exists(tokenfile):
+    token = open(tokenfile).read()
+    print("Token: %s" % token)
+    headers = {'Authorization': 'token %s' % token}
+else:
+    headers = {}
+    
 def call(url):    
-    response = requests.get(url)
+    response = requests.get(url, headers=headers)
 
     if response.status_code != 200:
         print(response.status_code)
