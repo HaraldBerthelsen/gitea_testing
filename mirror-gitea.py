@@ -12,6 +12,9 @@ import sys, os
 base_url = "https://www.abair.tcd.ie/gitea"
 api_url = "%s/api/v1" % base_url
 
+clone_ssh_base = "git@www.abair.tcd.ie"
+
+
 tokenfile = ".token"
 if os.path.exists(tokenfile):
     token = open(tokenfile).read()
@@ -52,7 +55,8 @@ def pull(directory):
 def clone(directory):
     cwd = os.getcwd()
     os.chdir(os.path.dirname(directory))
-    cmd = "git clone '%s/%s.git'" % (base_url, directory)
+    #cmd = "git clone '%s/%s.git'" % (base_url, directory)
+    cmd = "git clone '%s:%s.git'" % (clone_ssh_base, directory)
     print(cmd)
     os.system(cmd)
     os.chdir(cwd)
