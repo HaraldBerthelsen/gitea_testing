@@ -21,7 +21,7 @@ clone_ssh_base = "git@www.abair.tcd.ie"
 tokenfile = ".token"
 if os.path.exists(tokenfile):
     token = open(tokenfile).read().strip()
-    print("Token: %s" % token)
+    #print("Token: %s" % token)
     headers = {'Authorization': 'token %s' % token}
 else:
     headers = {}
