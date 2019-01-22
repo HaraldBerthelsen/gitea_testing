@@ -2,6 +2,8 @@
 
 There are plenty of git usage tutorials for anything not covered here. This is only for basic workflow usage. Anything else, for example **branching** and **pull requests**, will be added later if at all..
 
+This tutorial deals with the command line interface to git/gitea. There are plenty of GUIs that you can use if you prefer, especially if you're on mac or windows.
+
 # Log in to the gitea web interface
 
 Open https://www.abair.tcd.ie/gitea in your browser.
@@ -18,7 +20,7 @@ In the top bar, click **explore** and have a look. There are lists of all reposi
 
 # Clone a repository
 
-When you find something that you need clone it to your computer. Here I will assume that it's the tutorial repository, otherwise of course replace that with what yu want.
+When you find something that you need clone it to your computer. Here I will assume that it's the tutorial repository, otherwise of course replace that with what you want.
 
 Click explore -> organizations -> abair-git-tutorial -> tutorial (or open https://www.abair.tcd.ie/gitea/abair-git-tutorial/tutorial)
 
@@ -31,6 +33,45 @@ In $HOME/git, type this into your terminal:
 'git clone ' and then paste the url from gitea:
 
 ```$HOME/git>git clone https://www.abair.tcd.ie/gitea/abair-git-tutorial/tutorial.git```
+
+You will be asked for your abair gitea username and password. Then the repository will be downloaded to your computer.
+
+# Add a file to the repository
+
+```cd tutorial```
+
+```echo "hello" > my_new_file.txt```
+
+Or of course open the new file in your text editor of choice and add anything you like.
+
+```git add my_new_file.txt```
+
+# Edit a file in the repository
+
+Open the file in your favourite editor and change it as you please.
+
+# Commit the file to the repository
+
+```git commit my_new_file.txt -m "your commit message"```
+
+or
+
+```git commit . -m "your commit message"```
+
+The commit message can be anything you like. It should preferably describe the change you made.
+
+# Push to the remote repository
+
+```git push```
+
+You may be asked for username and password.
+
+# That's all
+
+* git clone URL
+* git add FILE
+* git commit FILE -m MESSAGE
+* git push
 
 
 
