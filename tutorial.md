@@ -66,11 +66,25 @@ The commit message can be anything you like. It should preferably describe the c
 
 You may be asked for username and password.
 
+# Look again at the gitea web page
+
+Reload the page, and you will see the new file.
+
+# Remove a file
+
+```git rm my_new_file.txt```
+
+```git commit . -m "your message"```
+
+```git push```
+
+
 # That's all
 
 * git clone URL
 * git add FILE
-* git commit FILE -m MESSAGE
+* git rm FILE
+* git commit FILE|. -m MESSAGE
 * git push
 
 
