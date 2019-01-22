@@ -28,9 +28,9 @@ Open a terminal. CD to someplace where you want to keep your git repositories, f
 
 In $HOME/git, type this into your terminal:
 
-'''git clone ''' and then paste the url from gitea:
+'git clone ' and then paste the url from gitea:
 
-'''$HOME/git>git clone https://www.abair.tcd.ie/gitea/abair-git-tutorial/tutorial.git'''
+```$HOME/git>git clone https://www.abair.tcd.ie/gitea/abair-git-tutorial/tutorial.git```
 
 
 
