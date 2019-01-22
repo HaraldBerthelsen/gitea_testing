@@ -87,5 +87,15 @@ Reload the page, and you will see the new file.
 * git commit FILE|. -m MESSAGE
 * git push
 
+# What's next?
+
+Explore the possibilities of "issues" and "wiki" on the gitea page.
+
+Find a gui to work with, if you prefer that. There are many!
+
+Learn about git branches..
+
+
+
 
 
