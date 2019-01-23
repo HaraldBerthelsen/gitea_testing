@@ -79,13 +79,25 @@ Reload the page, and you will see the new file.
 ```git push```
 
 
-# That's all
+# Update from the server
 
+The first time you download a repository, you use **git clone**, after that you use **git pull** instead. If other people are working in the same repository it's a good idea to **pull** before you do anything else, in case files have been changed.
+
+```git pull```
+
+
+# Summary
+## Communicating with the server:
 * git clone URL
+* git pull
+* git push
+
+## Work locally on your computer:
 * git add FILE
 * git rm FILE
 * git commit FILE|. -m MESSAGE
-* git push
+
+# That's all
 
 # What's next?
 
