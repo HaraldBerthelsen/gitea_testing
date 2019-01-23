@@ -28,13 +28,16 @@ You will see a list of the repository contents, followed by the README.md file. 
 
 Open a terminal. CD to someplace where you want to keep your git repositories, for example $HOME/git (create the "git" directory if you need to).
 
+```(mkdir git)```
+```cd git```
+
 In $HOME/git, type this into your terminal:
 
 'git clone ' and then paste the url from gitea:
 
 ```$HOME/git>git clone https://www.abair.tcd.ie/gitea/abair-git-tutorial/tutorial.git```
 
-You will be asked for your abair gitea username and password. Then the repository will be downloaded to your computer.
+You will be asked for your abair gitea username and password. The repository will be downloaded to your computer.
 
 # Add a file to the repository
 
@@ -101,9 +104,10 @@ The first time you download a repository, you use **git clone**, after that you 
 
 # What's next?
 
-Explore the possibilities of "issues" and "wiki" on the gitea page.
+Explore the possibilities of "issues" and "wiki" on the gitea page. Look at the commit log of a repository.
+Try to do things I haven't thought of, and let me know if something breaks or seems not to work!
 
-Find a gui to work with, if you prefer that. There are many!
+Find a gui to work with, if you prefer that. There are many.
 
 Learn about git branches..
 
